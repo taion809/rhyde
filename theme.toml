@@ -1,0 +1,17 @@
+name = "RHyde"
+license = "MIT"
+source_repo = ""
+description = "An elegant open source and mobile first theme"
+tags = ["blog", "company"]
+features = ["blog", ]
+
+[author]
+    name = "taion809"
+    email = "nicholas@redstalker.com"
+    url = "http://redstalker.com"
+
+# If Porting existing theme
+[original]
+    name = "spf13"
+    url = "http://spf13.com"
+    repo = "http://www.github.com/spf13/hyde"

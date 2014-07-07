@@ -1,0 +1,24 @@
+{{ template "theme/partials/head.html" . }}
+<body>
+
+{{ template "theme/partials/nav.html" . }}
+
+<div class="content container">
+    <div class="post">
+      <h1>{{ .Title }}<small> | <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span></small></h1>
+          {{ .Content }}
+    </div>
+
+{{ template "_internal/disqus.html" . }}
+
+</div>
+
+{{ template "theme/partials/footer.html" . }}
+
+</body>
+    {{ template "theme/partials/google_analytics.html" . }}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</html>
